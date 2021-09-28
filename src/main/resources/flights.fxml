@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FlightsController">
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btnClose" fx:id="btnClose" alignment="CENTER" contentDisplay="CENTER" layoutX="562.0" layoutY="10.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" text="X" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="670.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="9.0" />
+               </font></Button>
+            <Button id="btnMinimize" fx:id="btnMinimize" alignment="CENTER" contentDisplay="CENTER" layoutX="352.0" layoutY="10.0" maxHeight="20.0" maxWidth="20.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" onAction="#setBtnMinimize" prefHeight="20.0" prefWidth="20.0" text="_" textAlignment="CENTER" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="641.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="9.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="btnLogin" fx:id="btnLogin" layoutX="100.0" layoutY="292.0" mnemonicParsing="false" onAction="#setBtnLoginStage" text="login" AnchorPane.bottomAnchor="43.0" AnchorPane.rightAnchor="43.0" />
+         </children></AnchorPane>
+   </right>
+   <left>
+      <AnchorPane maxHeight="360.0" maxWidth="200.0" minHeight="360.0" minWidth="200.0" prefHeight="360.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField id="from" fx:id="from" layoutX="24.0" layoutY="115.0" onMouseEntered="#setLabelFrom" onMouseExited="#unsetLabelFrom" promptText="From" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="1.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <TextField id="destination" fx:id="destination" layoutX="25.0" layoutY="173.0" onMouseEntered="#setLabelTo" onMouseExited="#unsetLabelTo" promptText="Destination" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="1.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Label id="lblFrom" fx:id="lblFrom" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="51.0" text="From" AnchorPane.bottomAnchor="295.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="44.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font></Label>
+            <Label id="lblDestination" fx:id="lblDestination" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="128.0" text="To" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="143.0" AnchorPane.topAnchor="124.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,88 @@
+.list-cell .text {
+    -fx-font: 20px Tahoma;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-content-display: center;
+}
+
+.list-cell {
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-content-display: center;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-background-color: #f4f4f4;
+    -fx-border-color: #cde3f5;
+}
+
+
+.list-cell:filled:hover {
+    -fx-text-fill: white;
+    -fx-focus-traversable: false;
+}
+
+.list-view .scroll-bar {
+    -fx-opacity: 0;
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.list-view {
+    -fx-scale-x: 1px;
+    -fx-scale-y: 1px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: transparent;
+}
+
+
+#btnClose {
+    -fx-background-color: #00b7ff;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, red, 10.0, 0.0, 0.0, 0.0);
+
+}
+
+#btnClose:hover {
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-border-width: 2;
+    -fx-border-color: aqua;
+    -fx-effect: dropshadow(three-pass-box, red, 100.0, 0.9, 0.0, 0.0);
+}
+
+#btnMinimize {
+    -fx-background-color: #00b7ff;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(three-pass-box, lightseagreen, 10.0, 0.0, 0.0, 0.0);
+}
+
+#btnMinimize:hover {
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-border-width: 2;
+    -fx-border-color: aqua;
+    -fx-effect: dropshadow(three-pass-box, lightseagreen, 100.0, 0.9, 0.0, 0.0);
+}
+
+#lblFrom, #lblDestination {
+    -fx-text-fill: none;
+}
+
+#from, #destination {
+    -fx-background-radius: 15px;
+    -fx-background-color: linear-gradient(to top, #dedede, #f4f4f4);
+    -fx-border-width: 2;
+    -fx-border-color: #016f6e;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, gray, 1.0, 0.5, 0.0, 0.0);
+}
